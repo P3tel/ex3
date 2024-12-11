@@ -173,7 +173,7 @@ void printAvgDelta(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES])
         avgDelta[i] = totalDelta/day;
     }
     for (int i = 0; i < NUM_OF_BRANDS; i++) {
-        printf("Brand: %s, Average Delta: %f\n", brand[i], avgDelta[i]);
+        printf("Brand: %s, Average Delta: %f\n", brands[i], avgDelta[i]);
     }
 }
 
