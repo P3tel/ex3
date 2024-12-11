@@ -161,6 +161,7 @@ void printAvgDelta(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES])
 {
     int c1[NUM_OF_BRANDS] = {0};
     int sum1, sum2,sum;
+    float f1;
     for (int i = 0; i < NUM_OF_BRANDS; i++) {
         for (int j = 0; j < day - 1; j++) {
             sum1 = cube[j][i][0] + cube[j][i][1] + cube[j][i][2] + cube[j][i][3];
@@ -168,7 +169,8 @@ void printAvgDelta(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES])
             sum = sum2 - sum1;
             c1[i] += sum;
         }
-        printf("Brand: %s , Average Delta: %f\n", brands[i], c1[i]/day);
+        f1 = c1[i]/day;
+        printf("Brand: %s , Average Delta: %f\n", brands[i], f1);
     }
 }
 
