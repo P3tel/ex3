@@ -158,10 +158,8 @@ void printOverall(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES])
 
 void printAvgDelta(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES]) 
 {
-    float avgDelta[NUM_OF_BRANDS] = {0}; // Use float to store average delta
+    float avgDelta[NUM_OF_BRANDS] = {};
     int sum1, sum2, delta;
-
-    // Iterate over each brand
     for (int i = 0; i < NUM_OF_BRANDS; i++) {
         int totalDelta = 0;
         for (int j = 0; j < day - 1; j++) {
