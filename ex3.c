@@ -53,9 +53,9 @@ void printMissing(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES]) {
         }
     }
     if (missCount)
-        printf("\nPlease complete the data.\n");
+        printf("\nPlease complete the data\n");
     else
-        printf("\nAll brands have data for today.\n");
+        printf("\nAll brands have data for today\n");
 }
 //check if a brand hasnt been inputed yet
 int isBrandValid(int type, int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES]) {
@@ -77,9 +77,8 @@ void printAllData(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES])
             }
            printf("\n");
         }
-
-        printf("*****************************************\n");
     }
+    printf("*****************************************\n");
 }
 
 void printDaily(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES], int userDate)
